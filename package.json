@@ -1,0 +1,21 @@
+{
+  "name": "pollplacesgetter",
+  "version": "1.0.0",
+  "description": "a simple app to get polling place data from Google civic API",
+  "main": "get.js",
+  "dependencies": {
+    "googleapis": "^14.0.0",
+    "line-by-line": "^0.1.5",
+    "google-auth-library": "^0.9.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matt Holland matt@mattholland.com",
+  "license": "MIT"
+  "engines": {
+    "node": "4.5.0"
+  }
+
+}
