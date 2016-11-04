@@ -54,25 +54,17 @@ function LoopLines(Lines, length){
           var logline = precinctName + "\t"  ;
           if (err) {
             logline += err.message;
-          } else if (response.earlyVoteSites){
+          } else if (response.pollingLocations){
             try {
-              //  logline +=
-              //            response.pollingLocations[0].address.locationName + "\t" +
-              //            response.pollingLocations[0].address.line1 + "\t" +
-              //            response.pollingLocations[0].address.city + "\t" +
-              //            response.pollingLocations[0].address.state + "\t" +
-              //            response.pollingLocations[0].address.zip + "\t" +
-              //            response.pollingLocations[0].sources[0].name // should be smarter about the case where there is more than one source
-              //            ;
+               logline +=
+                         response.pollingLocations[0].address.locationName + "\t" +
+                         response.pollingLocations[0].address.line1 + "\t" +
+                         response.pollingLocations[0].address.city + "\t" +
+                         response.pollingLocations[0].address.state + "\t" +
+                         response.pollingLocations[0].address.zip + "\t" +
+                         response.pollingLocations[0].sources[0].name // should be smarter about the case where there is more than one source
+                         ;
 
-              logline +=
-                        response.earlyVoteSites[0].address.locationName + "\t" +
-                        response.earlyVoteSites[0].address.line1 + "\t" +
-                        response.earlyVoteSites[0].address.city + "\t" +
-                        response.earlyVoteSites[0].address.state + "\t" +
-                        response.earlyVoteSites[0].address.zip + "\t" +
-                        response.earlyVoteSites[0].sources[0].name // should be smarter about the case where there is more than one source
-                        ;
 
 
 
